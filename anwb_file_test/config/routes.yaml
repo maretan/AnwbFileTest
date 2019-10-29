@@ -1,0 +1,14 @@
+# This file is the entry point to configure your own HTTP routes.
+# Files in the routes/ subdirectory configure the routes for your dependencies.
+
+store_file_information:
+  path: /store
+  controller: App\Controller\FileApiController::storeFileInfo
+
+send_file_information:
+  path: /get
+  controller: App\Controller\FileApiController::sendFileInfo
+
+display_file_info:
+  path: /show
+  controller: App\Controller\FileDisplayController::showFiles
